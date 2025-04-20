@@ -1,0 +1,185 @@
+/* Resetando os estilos padrão e configurando o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffb3b3, #ff99cc); /* Fundo com gradiente suave de rosa */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do container principal da página */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    border: 4px solid #ff6699; /* Borda com cor suave de rosa */
+}
+
+/* Estilo do título principal */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff3399; /* Cor vibrante para o título */
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o cabeçalho da área de cadastro de livros */
+.header-form {
+    background-color: #ff3399;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Estilo para o título e descrição do cabeçalho */
+.header-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.header-form p {
+    font-size: 1rem;
+    color: #ffe6f1; /* Cor suave para o texto de descrição */
+}
+
+/* Estilo para o formulário de cadastro */
+form {
+    margin-bottom: 30px;
+}
+
+/* Estilo para as labels de cada campo do formulário */
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+/* Estilos para os campos de entrada (inputs) */
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ff66b3; /* Borda rosa suave */
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease; /* Animação de transição no foco */
+}
+
+/* Estilos para quando o campo de entrada está em foco */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus {
+    border-color: #ff3399; /* Cor de foco mais intensa */
+}
+
+/* Estilos para o botão de enviar do formulário */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff3399;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover (quando o mouse passa sobre o botão) */
+button:hover {
+    background-color: #ff66b3;
+}
+
+/* Estilo para a tabela de lista de livros */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para as células da tabela */
+th, td {
+    padding: 14px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+/* Estilo para os títulos das colunas da tabela */
+th {
+    background-color: #ff6699;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Estilo para linhas alternadas da tabela */
+tr:nth-child(even) {
+    background-color: #ffe6f1;
+}
+
+/* Estilo para os botões de deletar e editar */
+button.delete {
+    background-color: #ff5050;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+button.delete:hover {
+    background-color: #ff3333;
+}
+
+button.edit {
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+button.edit:hover {
+    background-color: #ffb300;
+}
+
+/* Estilo do título da lista de livros */
+#livrosLista h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff3399;
+    font-weight: bold;
+}
+
+/* Estilo das imagens das capas de livros na tabela */
+td img {
+    width: 60px;
+    height: 90px;
+    object-fit: cover; /* Garantir que a imagem seja cortada para se ajustar ao tamanho */
+    border-radius: 6px;
+}
